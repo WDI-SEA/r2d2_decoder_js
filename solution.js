@@ -60,9 +60,7 @@ for (let i = 0; i < inputs.length; i++) {
   if (inputs[i] == 'BOP') {
     letters.push('BOP');
   } else {
-    var beepBoop = inputs[i];
-    var sum = beepBoop[0] + beepBoop[1];
-    letters.push(sum);
+    letters.push(inputs[i][0] + inputs[i][1]);
   }
 }
 
