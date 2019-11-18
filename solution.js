@@ -32,6 +32,23 @@ let decoderTable = {
 // These are the inputs that you have
 let inputs = [[2, 6], [0, 5], [9, 3], [4, 8], [10, 5], 'BOP', [11, 12], [5, 10], [1, 17], [5, 7], [4, 0]];
 
+var letters = []
+
+for (i=0; i<inputs.length; i++) {
+  if (inputs[i] === 'BOP') {
+    letters.push('BOP')
+  }
+  else {
+    letters.push(inputs[i][0] + inputs[i][1])
+    }
+}
+
+console.log(letters)
+
+for (i=0; i<letters.length; i++) {
+  console.log(decoderTable[letters[i]])
+}
+
 
 // STEP 1: Make a new, empty array called letters.
 
